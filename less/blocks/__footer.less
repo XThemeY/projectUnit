@@ -1,0 +1,156 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #1a1a1a;
+    @media (min-width: 768px) {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    @media (min-width: 1200px) {
+		padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+        margin-bottom: 47px;
+    }
+    @media (min-width: 1200px) {
+		flex-direction: row;
+		margin-bottom: 58px;
+    }
+}
+
+.footer-nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & a:not(:last-child) {
+        margin-bottom: 25px;
+    }
+    margin-bottom: 55px;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        & a:not(:last-child) {
+            margin-bottom: 0;
+            margin-right: 35px;
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 0;
+    }
+}
+
+.footer-nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    & a:not(:last-child) {
+        margin-right: 25px;
+    }
+
+    @media (min-width: 768px) {
+        & a:not(:last-child) {
+            margin-right: 35px;
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-left: 30px;
+    }
+}
+
+.footer-item {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    transition: all 0.2s linear;
+}
+
+.common-icon-link {
+    &:hover {
+        color: #2bb279;
+    }
+}
+
+.footer_copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #7c7c7c;
+    width: 200px;
+    line-height: 1.7;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+        width: unset;
+    }
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 46px;
+    height: 46px;
+    outline: none;
+    border-radius: 23px;
+    background-color: #313131;
+    transition: all 0.2s linear;
+    &::before {
+        position: absolute;
+
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.twitter-icon {
+    &:hover {
+        background-color: #1da1f2;
+    }
+    fill: white;
+}
+
+.fb-icon {
+    &:hover {
+        background-color: #3b5998;
+    }
+    fill: white;
+}
+
+.tumbler-icon {
+    &:hover {
+        background-color: black;
+    }
+    fill: white;
+}
+
+.insta-icon {
+    &:hover {
+        background-color: #2e5e86;
+    }
+    fill: white;
+}
+
+.unit {
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
